@@ -4,7 +4,7 @@ function masuk() {
     var usia = document.getElementById("usia").value;
     swal.setActionValue(usia);
     if (nama == '') {
-        alert('Anda Belum Mengisi Nama';
+        alert('Anda Belum Mengisi Nama');
         return false;
     } else if (usia == '') {
         alert('nda Belum Mengisi Usia');
