@@ -1,5 +1,6 @@
 // Peringatan //
-function masuk() {
+function masuk(e) {
+    e.preventDefault();
     var nama = document.getElementById("nama").value;
     var usia = document.getElementById("usia").value;
 
@@ -13,35 +14,35 @@ function masuk() {
         return false;
     }
 
-    const x = parseInt(usia);
+    var x = parseInt(usia),
+        ret;
 
     switch (true) {
         case (x >= 1 && x <= 5):
             swal("Terimakasih", "Anda Masih Bayi");
-            return false;
+            ret = true
             break;
         case (x >= 6 && x <= 15):
             swal("Terimakasih", "Anda Masih Anak-anak", "success");
-            return false;
+            ret = true
             break;
         case (x >= 16 && x <= 30):
             swal("Terimakasih", "Anda Masih Remaja", "success");
-            return false;
+            ret = true
             break;
         case (x >= 31 && x <= 60):
             swal("Terimakasih", "Anda Sudah Dewasa", "success");
-            return false;
+            ret = true
             break;
         case (x >= 61):
             swal("Terimakasih", "Anda Sudah Dewasa", "success");
-            return false;
+            ret = true
             break;
-        case (x <= 0):
+        default:
             swal("Oh No", "Anda Sudah Game Over", "success");
-            return false;
+            ret = false
             break;
     }
 
+    return ret
 }
-
-console.log(window.stop());
