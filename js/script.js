@@ -4,10 +4,10 @@ function masuk() {
     var usia = document.getElementById("usia").value;
     swal.setActionValue(usia);
     if (nama == '') {
-        alert('Anda Belum Mengisi Nama');
+        swal("Maaf", "Tolong isi Nama Anda", "warning");
         return false;
     } else if (usia == '') {
-        alert('nda Belum Mengisi Usia');
+        swal("Maaf", "Tolong isi Usia Anda", "warning");
         return false;
     } else if (usia >= 1 && usia <= 5) {
         swal("Terimakasih", "Anda Masih Bayi");
