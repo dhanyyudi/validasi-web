@@ -10,7 +10,7 @@ function masuk() {
         swal("Maaf", "Tolong isi Usia Anda", "warning");
         return false;
     } else if (usia >= 1 && usia <= 5) {
-        swal("Terimakasih", "Anda Masih Bayi");
+        swal("Terimakasih", "Anda Masih Bayi", "success");
         return false;
     } else if (usia >= 6 && usia <= 15) {
         swal("Terimakasih", "Anda Masih Anak-anak", "success");
