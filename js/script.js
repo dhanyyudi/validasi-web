@@ -1,4 +1,4 @@
-// Peringatan //
+ // Peringatan //
 function masuk() {
     var nama = document.getElementById("nama").value;
     var usia = document.getElementById("usia").value;
@@ -25,7 +25,7 @@ function masuk() {
         swal("Terimakasih", "Anda Sudah Dewasa", "success");
         return false;
     } else if (usia <= 0) {
-        swal("Oh No", "Anda Sudah Game Over", "success");
+        swal("Selamat", "Anda Menjadi Ironmen", "success");
         return false;
     }
 
