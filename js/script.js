@@ -25,7 +25,7 @@ function masuk() {
         swal("Terimakasih", "Anda Sudah Dewasa", "success");
         return false;
     } else if (usia <= 0) {
-        swal("Selamat", "Anda Menjadi Ironmen", "success");
+        swal("Salah", "Anda Sudah Game Over", "warning");
         return false;
     }
 
